@@ -1,0 +1,158 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+
+.navbar-brand i {
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.f-social {
+    width: 100%;
+    text-align: center;
+}
+
+.f-social i {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.nav-links {
+    width: 100%;
+    text-align: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    margin-top: 1rem;
+}
+
+.listing-card {
+    border: none !important;
+}
+
+.card-img-top {
+    height: 25rem;
+    border-radius: 0 !important;
+    border-radius: 0.5rem !important;
+    background-size: cover !important;
+    margin-top: 1rem;
+    opacity: 1;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-img-top:hover {
+    opacity: 0.6;
+    background-color: white;
+}
+
+.listing-link {
+    text-decoration: none;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.icon-title {
+    margin: 0 !important;
+    font-size: 0.8rem;
+}
+
+.filter i {
+    font-size: 1.2rem;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter {
+    text-decoration: none;
+    color: black;
+    margin-right: 2rem;
+    text-align: center;
+    opacity: 0.7;
+    margin-top: 1rem;
+}
+
+.filter:hover {
+    opacity: 1;
+}
+
+.tax-toggle {
+    border: 1px solid grey;
+    border-radius: 1rem;
+    padding: 10px;
+    margin-top: 0.7rem;
+    margin-bottom: 1.1rem;
+}
+
+#brand-name {
+    color: #fe424d;
+    padding-top: 6px;
+    margin-left: -0.8rem;
+}
+
+#branding {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.search-input {
+    border-radius: 25px !important;
+    border: 0.5px solid grey !important;
+    padding: 0 1rem !important;
+}
+
+.search-btn {
+    border-radius: 25px !important;
+    background-color: #fe424d !important;
+    color: #ebebeb !important;
+}
+
+.search-btn i {
+    display: inline;
+    margin-right: 0.5rem;
+    color: #ebebeb;
+}
+
+.search-btn:hover {
+    opacity: 0.5;
+}
