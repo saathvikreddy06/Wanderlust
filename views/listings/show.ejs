@@ -52,19 +52,23 @@
     </form>
     <hr>
     <% } %>
-    <h3>All Reviews</h3>
-    <div class="row">
-        <%for(review of listing.reviews) {%>
-            <div class="card ms-3 mb-3" style="width: 25rem;">
-                <div class="card-body">
-                    <h5 class="card-title">@<%=review.author.username%></h5>
-                    <p class="starability-result small-rating" data-rating="<%=review.rating%>"></p>
-                    <p class="card-text"><%=review.comment%></p>
+    <%if(listing.reviews.length>0) {%>
+        <h3>All Reviews</h3>
+        <div class="row">
+            <%for(review of listing.reviews) {%>
+                <div class="card ms-3 mb-3" style="width: 25rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">@<%=review.author.username%></h5>
+                        <p class="starability-result small-rating" data-rating="<%=review.rating%>"></p>
+                        <p class="card-text"><%=review.comment%></p>
+                    </div>
+                    <%if(currUser.username==review.author.username) {%>
+                        <form method="post" action="/listings/<%=listing._id%>/reviews/<%=review._id%>?_method=DELETE">
+                            <button class="btn btn-dark btn-sm col-4 mb-3 mt-2">Delete</button>
+                        </form>
+                    <%}%>
                 </div>
-                <form method="post" action="/listings/<%=listing._id%>/reviews/<%=review._id%>?_method=DELETE">
-                    <button class="btn btn-dark btn-sm col-4 mb-3 mt-2">Delete</button>
-                </form>
-            </div>
-        <%}%>
-    </div>
+            <%}%>
+        </div>
+    <%}%>
 </body>
