@@ -9,7 +9,6 @@ body {
 }
 
 .navbar {
-    height: 5rem;
     background-color: white;
 }
 
@@ -155,4 +154,53 @@ body {
 
 .search-btn:hover {
     opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+    .listing-title {
+        text-align:start !important;
+    }
+    .ms-auto {
+        width: 100%;
+    }
+    .search-field {
+        width: 100% !important;
+    }
+    .search-field form {
+        width: 100% !important;
+    }
+    .search-input {
+        flex: 1;
+    }
+    .navbar-nav {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .filter {
+        display: none;
+    }
+    .tax-toggle {
+        display: none;
+    }
+    .navbar-nav.ms-auto {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .navLinkMain a {
+        text-align: center !important;
+    }
+}
+
+.container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar-collapse {
+    display: flex !important;
+    flex-wrap: wrap;
+    width: 100%;
 }
